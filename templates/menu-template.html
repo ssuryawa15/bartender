@@ -1,0 +1,53 @@
+<body class="BODY">
+<div id="menuDiv" class="container-fluid">
+    <div id="stock" class="container">
+        <div class="container centered">
+            <h2 class="sans-serif">
+                Bar Stock
+            </h2>
+        </div>
+
+
+
+        <div class="jumbotron sans" style="background-color: black">
+            <table class="table-responsive container table-condensed">
+                 <tr ng-repeat="x in menuScope.stock">
+                     <td>{{ x.name }}</td>
+                     <td>{{ x.qty }}{{x.unit}}</td>
+
+                 </tr>
+             </table>
+         </div>
+
+
+
+        <div class="container centered">
+            <h2 class="sans-serif">
+                Orders
+            </h2>
+        </div>
+
+
+<div class="sans">
+
+        <ul class="orders" ng-repeat = "k in menuScope.recipes">
+            <h3>{{k.name}}</h3>
+            <p ng-repeat = "d in k.ingredients">{{d.display}}&nbsp;&nbsp;&nbsp;{{d.name}}</p>
+            <ul class="list-inline list group">
+                <li class="glyphicon glyphicon-plus" style="cursor: pointer" ng-click="menuScope.getdrink(k.id)"></li>
+
+                <li><label style="background-color: white" class="la">{{k.numberOfDrinksMade}}</label></li>
+                <li class="glyphiconminus glyphicon-minus" style="cursor: pointer" ng-click="menuScope.canceldrink(k.id)"></li>
+            </ul>
+            </ul>
+        </div>
+
+
+    </div>
+    <br>
+    <div class="container centered">
+    <button type="text" class="btn btn-info btn-lg" style="background-color: mediumpurple" value="Place Order" ng-click="menuScope.placeOrder()">Place Order</button>
+    </div>
+
+</div>
+</body>

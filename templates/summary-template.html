@@ -1,0 +1,38 @@
+<body id="menuDiv" class="BODY">
+<div class="container summary-sans centered">
+    <h1>
+        Summary
+    </h1>
+</div>
+    <br><br>
+
+        <div class="container sans-serif centered">
+            <table class="table-responsive table-condensed">
+                <tr ng-repeat = "s in summaryScope.listOfRecipes">
+                    <td>{{s.numberOfDrinksMade}}</td>
+                    <td>{{s.name}}</td>
+
+                </tr>
+                <tr>
+                    <td>{{summaryScope.total}}</td>
+                    <td>Total</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+

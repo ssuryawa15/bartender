@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<button onclick="makeMartini()"  value="martini">martini</button>
+<button onclick="makeScrewdriver()">Screwdriver</button>
+<button onclick="makeManhattan()">manhattan</button>
+<button onclick="makeMargarita()">margarita</button>
+<button onclick="makebloodyMary()">bloodymary</button>
+<br><br><br>
+<button onclick="deleteMargarita()">cancel margarita</button>
+
+
+<p id="demo"></p>
+
+
+<body>
+<h1>Hello Plunker!</h1>
+</body>
+<script>
+    var vodka = 750;
+    var gin = 1.5;
+    var whiskey = 750;
+    var tequila = 750;
+    var sweetvermouth = 750;
+    var dryvermouth = 750;
+    var bloodyMaryMix = 2;
+    var agaveNectar = 24;
+    var orangeJuice = 48;
+    var limes =3;
+    var cherries = 9;
+    var celeryStalks = 16;
+    var olives = 24;
+
+    console.log("i am here");
+
+    function makeMartini(){
+        if(gin<0.059147 || dryvermouth <29.5735 || olives<1){
+            console.log("cannot make gin,dryvermouth,olives is empty");
+            document.getElementById("demo").innerHTML ="empty" ;
+
+        }
+        else{
+            console.log("the martini is prepared");
+            gin = gin-0.0591471;
+            dryvermouth = dryvermouth - 29.5735;
+            olives = olives- 1;
+            //console.log(gin);
+            //console.log(olives);
+            // console.log(dryvermouth);
+            document.getElementById("demo").innerHTML ="succesful" ;
+        };
+
+    }
+
+    //makeMartini();
+
+    function makebloodyMary(){
+        if(vodka<59.1471 || bloodyMaryMix < 0.118294 || celeryStalks <1){
+            console.log("cannot prepare not enough ingredients");
+            document.getElementById("demo").innerHTML ="empty stock" ;
+        }
+        else{
+            console.log("the bloody mary is prepared in this way");
+            vodka = vodka - 59.1471;
+            bloodyMaryMix = bloodyMaryMix-0.118294;
+            celeryStalks = celeryStalks-1;
+            console.log(vodka);
+            console.log(bloodyMaryMix);
+            console.log(celeryStalks);
+            document.getElementById("demo").innerHTML ="succesful" ;
+        }
+
+    }
+
+    //makebloodyMary();
+
+    function makeMargarita(){
+        if(tequila<59.1471 || orangeJuice<1 || agaveNectar<1 ||limes<1){
+            console.log("empty stock");
+            document.getElementById("demo").innerHTML ="empty stock" ;
+
+        }
+        else{
+
+            console.log("the Margarita is here");
+            tequila = tequila -59.1471;
+            orangeJuice = orangeJuice -1;
+            agaveNectar =agaveNectar -1;
+            limes = limes -1;
+            console.log(tequila,orangeJuice,agaveNectar,limes);
+            document.getElementById("demo").innerHTML ="succesful" ;
+        }
+    }
+
+    // makeMargarita();
+
+    function makeScrewdriver(){
+        if(vodka<59.1471 ||orangeJuice <4 ){
+            document.getElementById("demo").innerHTML ="empty stock" ;
+        }
+        else{
+            console.log("the Screwdriver is here");
+            vodka = vodka - 59.1471;
+            orangeJuice = orangeJuice-4;
+            console.log(vodka,orangeJuice);
+            document.getElementById("demo").innerHTML ="succesful" ;
+        }
+    }
+    //makeScrewdriver();
+
+    function makeManhattan(){
+        if(whiskey <59.1471 || sweetvermouth <29.5735 ||cherries<1){
+            document.getElementById("demo").innerHTML ="empty stock" ;
+
+        }
+        else{
+            console.log("the manhattan drink is here");
+            whiskey =whiskey - 59.1471;
+            sweetvermouth =sweetvermouth-29.5735;
+            cherries = cherries-1;
+            console.log(whiskey,sweetvermouth,cherries);
+            document.getElementById("demo").innerHTML ="succesful" ;
+        }
+    }
+    //makeManhattan();
+
+
+    function deleteManhattan(){
+        whiskey =whiskey +59.1471;
+        sweetvermouth =sweetvermouth+29.5735;
+        cherries = cherries+1;
+        console.log("i deleted the manhattan drink");
+        console.log(whiskey,sweetvermouth,cherries);
+
+    }
+
+    //deleteManhattan();
+
+    function deleteMartini(){
+        gin = gin+0.0591471;
+        //console.log(gin);
+        dryvermouth = dryvermouth +29.5735;
+        olives = olives + 1;
+        console.log("deleted martini");
+
+
+        console.log(dryvermouth,olives,gin);
+    }
+
+    //deleteMartini();
+
+    function deletebloodyMary(){
+
+        vodka = vodka + 59.1471;
+        bloodyMaryMix = bloodyMaryMix+0.118294;
+        celeryStalks = celeryStalks+1;
+        console.log("i deleted the bloody mary")
+        console.log(vodka);
+        console.log(bloodyMaryMix);
+        console.log(celeryStalks);
+
+    }
+
+    //  deletebloodyMary();
+
+
+
+
+    function deleteMargarita(){
+        console.log("deleting margarita");
+        tequila = tequila+59.1471;
+        orangeJuice = orangeJuice+1;
+        agaveNectar =agaveNectar +1;
+        limes = limes +1;
+        console.log(tequila,orangeJuice,agaveNectar,limes);
+        document.getElementById("demo").innerHTML ="Margarita order is cancelled" ;
+
+
+    }
+
+    //deleteMargarita();
+
+
+    function deleteScrewdriver(){
+        console.log("deleting screwdriver");
+        vodka = vodka + 59.1471;
+        orangeJuice = orangeJuice+4;
+        console.log(vodka,orangeJuice);
+    }
+    //deleteScrewdriver();
+
+
+
+
+</script>
+
+
+</html>

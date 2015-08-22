@@ -1,0 +1,104 @@
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    font-size: 70px;
+
+
+}
+
+table{
+    font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+
+h2.sans-serif{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+
+
+}
+
+#rcorners2 {
+
+    border: 2px solid ;
+    padding: 20px;
+    width: 20%;
+    height: 100%;
+    background-color: grey;
+    box-sizing: border-box;
+}
+
+div.sans-serif{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: mediumpurple;
+    font-size:40px;
+}
+
+.white{
+    font-color: white;
+    font-size: 25px;
+
+}
+
+
+.orders {
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    width: 217px;
+    height: 250px;
+    border: 1px solid black;
+
+    background: -webkit-linear-gradient(darkslategrey 19%,dimgrey 23%);
+}
+.centered
+{
+    text-align:center;
+}
+
+BODY{
+   background-color: black;
+
+    /* No borders set */
+}
+
+
+div.sans{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: mediumpurple;
+    font-size:18px;
+}
+
+div.summary-sans{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size:40px;
+
+}
+
+.glyphicon:before {
+    color: green;
+    font-size: 25px;
+
+}
+
+.glyphiconminus {
+    color: red;
+    font-size: 38px;
+    background-color: transparent;
+
+}
+.la{
+    font-size: 24px;
+    background-color: white;
+
+}
+
+
+
+
+
+
